@@ -1,118 +1,92 @@
-.fb-logo {
-  width: 15rem;
-  margin-top: 2rem;
-  margin-bottom: -25px;
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Shared styles for input elements */
+input[type="text"] {
+  background-color: #ffffff;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  color: #1d2129;
+  font-family: Helvetica;
+  font-size: 1rem;
+  /* line-height: 1.5; */
+  padding: .9rem;
+  width: 92%;
+  margin: 0.4rem;
+}
+
+/* Container styles */
 .login-container {
-  /* margin-top: -100px; */
-  margin-top: -6.25;
-  width: 25rem;
   margin: 1.6rem auto;
+  width: 25rem;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.09);
 }
 
+/* Header styles */
 .log-into {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1.2rem;
-  /* padding-top: 25px;
-  padding-bottom: 5px; */
+  /* padding: 1.4rem 0.3rem;
+  padding-bottom: 1rem; */
   padding-top: 1.6rem;
-  padding-bottom: 0.3rem;
-
-  color:#1c1e21;
-  /* line-height:22px; */
-  line-height:1.4rem;
-  text-align:center;
+  padding-bottom: 0.8rem;
+  color: #1c1e21;
+  line-height: 1.4rem;
+  text-align: center;
 }
 
-input {
-  display: block;
-  background-color:#ffffff;
-  border-color:#dddfe2;
-  border-radius:6px;
-  border-style:solid;
-  border-width:1px;
-  color:#1d2129;
-  font-family:Helvetica;
-  /* font-size:17px; */
-  font-size:1rem;
-  /* line-height:16px; */
-  line-height:1rem;
-  /* padding:14px 16px; */
-  padding:1rem 1rem;
-  width: 85%;
-  /* margin-left: 12px;
-  margin-top: 12px; */
-  margin-left: .8rem;
-  margin-top: .8rem;
-}
-
-.btn-login {
-  align-items: flex-start;
-  background-color:#1877f2;
+/* Button styles */
+.btn-login,
+.btn-create-new-account {
+  background-color: #1877f2;
   border-radius: 6px;
   color: #ffffff;
   display: inline-block;
   font-family: Helvetica;
-  /* font-size: 20px; */
   font-size: 1.25rem;
   font-weight: 700;
-  justify-content: center;
   line-height: 48px;
-  padding: 0px 16px;
+  padding: 0 1rem;
   text-align: center;
-  /* margin-top: 12px; */
-  margin-top: .75rem;
+  margin: 0.75rem 0;
   width: 93%;
   outline: none;
-  border: 0px solid blue;
-}
-
-.forgot-account {
-  display: block;
-  /* margin-top: 20px; */
-  margin-top: 1.25rem;
-
-  color:#1877f2;
-  font-family:Helvetica;
-  font-size:14px;
-  font-weight:500;
-  line-height:18.76px;
-  text-align:center;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-create-new-account {
-  background-color:#42b72a;
-  border-radius:6px;
-  color:#ffffff;
-  display:inline-block;
-  font-family:Helvetica;
-  font-size:17px;
-  font-weight:700;
-  justify-content:center;
-  line-height:48px;
-  padding:0px 16px;
-  /* padding:0 1rem; */
-  text-align:center;
-  /* margin-bottom: 30px; */
-  margin-bottom: 1.9rem;
-  outline: none;
-  border: 0px solid #42b72a;
+  background-color: #42b72a;
+  width: 50%;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
 }
 
+/* Link styles */
+.forgot-account {
+  display: block;
+  margin-top: 1.25rem;
+  color: #1877f2;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Or text styles */
 .or {
-  color:#1c1e21;
-  /* font-size:12px; */
-  font-size:.75rem;
-  /* line-height:16.08px; */
-  line-height:1rem;
-  /* margin:10px 8px; */
+  color: #1c1e21;
+  font-size: 0.75rem;
+  line-height: 1rem;
   margin: 0.6rem 0.5rem;
-  text-align:center;
+  text-align: center;
 }
 
 /* Style the placeholder text when the input is in focus */
@@ -124,10 +98,18 @@ input:focus {
   outline: #cbd5e1; /* Change this to your desired focus color */
 }
 
+/* Add hover styles */
 .btn-login:hover {
   background-color: #2563eb;
 }
 
 .btn-create-new-account:hover {
   background-color: #65a30d;
+}
+
+/* Logo styles */
+.fb-logo {
+  width: 15rem;
+  margin-top: 2rem;
+  margin-bottom: -25px;
 }
